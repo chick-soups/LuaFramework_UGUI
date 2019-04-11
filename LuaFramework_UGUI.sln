@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LuaFramework_UGUI", "LuaFramework_UGUI.csproj", "{32D7BE25-7203-9336-7DC3-AB1A6A909E81}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LuaFramework_UGUI.Editor", "LuaFramework_UGUI.Editor.csproj", "{0F5BCE86-A6CE-FA80-3F43-44F1653F0ADE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{32D7BE25-7203-9336-7DC3-AB1A6A909E81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32D7BE25-7203-9336-7DC3-AB1A6A909E81}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32D7BE25-7203-9336-7DC3-AB1A6A909E81}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32D7BE25-7203-9336-7DC3-AB1A6A909E81}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F5BCE86-A6CE-FA80-3F43-44F1653F0ADE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F5BCE86-A6CE-FA80-3F43-44F1653F0ADE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F5BCE86-A6CE-FA80-3F43-44F1653F0ADE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F5BCE86-A6CE-FA80-3F43-44F1653F0ADE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

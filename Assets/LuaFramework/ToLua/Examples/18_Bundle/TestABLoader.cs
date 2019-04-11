@@ -30,6 +30,7 @@ public class TestABLoader : MonoBehaviour
             }
 
             --bundleCount;
+            Debug.Log(name);
             LuaFileUtils.Instance.AddSearchBundle(name, www.assetBundle);
             www.Dispose();
         }                     
@@ -53,7 +54,8 @@ public class TestABLoader : MonoBehaviour
 #if UNITY_ANDROID && !UNITY_EDITOR
         string main = streamingPath + "/" + LuaConst.osDir + "/" + LuaConst.osDir;
 #else
-        string main = "file:///" + streamingPath + "/" + LuaConst.osDir + "/" + LuaConst.osDir;
+        // string main = "file:///" + streamingPath + "/" + LuaConst.osDir + "/" + LuaConst.osDir;
+        string main = "file:///" + streamingPath + "/" +"StreamingAssets";
 #endif
         WWW www = new WWW(main);
         yield return www;
@@ -73,7 +75,8 @@ public class TestABLoader : MonoBehaviour
 #if UNITY_ANDROID && !UNITY_EDITOR
             string path = streamingPath + "/" + LuaConst.osDir + "/" + str;
 #else
-            string path = "file:///" + streamingPath + "/" + LuaConst.osDir + "/" + str;
+            // string path = "file:///" + streamingPath + "/" + LuaConst.osDir + "/" + str;
+            string path = "file:///" + streamingPath + "/" + str;
 #endif
             string name = Path.GetFileNameWithoutExtension(str);
             StartCoroutine(CoLoadBundle(name, path));            
